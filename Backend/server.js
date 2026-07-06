@@ -25,8 +25,9 @@ app.get('/', (req, res) => {
     res.json({ message: "Welcome to ELEVATE FIT API! 🚀" });
 });
 
+
 // Server Listening
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server is running successfully on port ${PORT} 🚀`);
 });

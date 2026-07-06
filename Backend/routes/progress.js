@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Progress = require('../models/Progress');
+const Progress = require('./models/Progress');
 const jwt = require('jsonwebtoken');
 
 // Middleware to verify JWT token
