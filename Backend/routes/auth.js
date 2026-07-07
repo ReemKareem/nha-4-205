@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('./models/User');
+const User = require('../models/User');
 
 // --- Middleware to protect routes and verify JWT Token ---
 const authMiddleware = async (req, res, next) => {
