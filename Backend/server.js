@@ -14,6 +14,7 @@ const { router: authRouter } = require('./routes/auth');
 app.use('/api/auth', authRouter);
 app.use('/api/progress', require('./routes/progress'));
 app.use('/api/contact', require('./routes/messages'));
+app.use('/api/chatbot', require('./routes/chatbot'));
 
 // Database Connection
 mongoose.connect(process.env.MONGO_URI)
